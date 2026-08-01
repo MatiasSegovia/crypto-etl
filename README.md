@@ -38,7 +38,7 @@ Crypto-ETL es un pipeline ETL modular que consume datos desde una API pública, 
 ---
 
 ## 📂 Estructura del Proyecto
-
+```text
 crypto-etl/
 │
 ├── README.md               # Documentación del proyecto
@@ -57,39 +57,40 @@ crypto-etl/
 │   └── processed/          # Archivos generados por el ETL
 │
 └── logs/                   # Registros de ejecución
+````
 
+# 🚀Cómo Ejecutar
+Follow the steps below to run the ETL pipeline locally:
 
-## 🚀Cómo Ejecutar
-
-# 1. Clonar el repositorio
+## 1. Clonar el repositorio
 git clone https://github.com/MatiasSegovia/crypto-etl
 cd crypto-etl
 
-# 2. (Opcional) Crear entorno virtual
+## 2. (Opcional) Crear entorno virtual
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 
-# 3. Instalar dependencias
+## 3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Configurar parámetros
-# Edita config.json para definir la criptomoneda, la moneda de referencia y la cantidad de días que deseas consultar.)
+## 4. Configurar parámetros
+## Edita config.json para definir la criptomoneda, la moneda de referencia y la cantidad de días que deseas consultar.)
 
-# 5. Ejecutar el pipeline
+## 5. Ejecutar el pipeline
 python src/main.py
 
 
-## 📊 Resultado del ETL
+# 📊 Resultado del ETL
 
 Al finalizar la ejecución, el pipeline genera automáticamente:
 
-
+````
 data/
 └── processed/
     ├── coingecko.csv
     └── coingecko.xlsx
-
-## 🚀 Roadmap de Evolución
+````
+# 🚀 Future Improvements
 
 Este proyecto continuará evolucionando incorporando nuevas herramientas y prácticas utilizadas en entornos profesionales de Data Engineering.
 
