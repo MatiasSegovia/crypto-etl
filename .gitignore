@@ -20,13 +20,15 @@ venv/
 # Logs
 # ==========================
 logs/*.log
+!logs/.gitkeep
 
 # ==========================
 # Generated Data (Output)
 # ==========================
 data/processed/*.csv
 data/processed/*.xlsx
-
+!data/processed/.gitkeep
+!data/raw/.gitkeep
 # ==========================
 # Environment Variables
 # ==========================

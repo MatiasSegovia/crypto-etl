@@ -14,7 +14,14 @@
 Crypto-ETL es un pipeline ETL modular que consume datos desde una API pública, los transforma, valida y exporta en archivos CSV y Excel listos para su análisis. La arquitectura separa cada etapa del proceso (Extract, Transform, Validate y Load), utiliza configuración externa mediante `config.json`, registra la ejecución con un sistema de logging y maneja errores de forma centralizada para facilitar su mantenimiento y escalabilidad.
 
 ---
+## 📊 ETL Output
+El pipeline genera automáticamente un archivo Excel listo para análisis.
 
+![Excel Output](assets/screenshots/output-excel.png)
+
+*Ejemplo del archivo generado por el proceso ETL.*
+
+---
 ## ⚡ Características Implementadas
 
 - ✅ **Arquitectura Modular:** Separa las etapas Extract, Transform, Validate y Load para facilitar el mantenimiento y la escalabilidad.
@@ -57,8 +64,9 @@ crypto-etl/
 │   └── processed/          # Archivos generados por el ETL
 │
 └── logs/                   # Registros de ejecución
-````
 
+````
+---
 # 🚀Cómo Ejecutar
 Follow the steps below to run the ETL pipeline locally:
 
@@ -78,6 +86,17 @@ pip install -r requirements.txt
 
 ## 5. Ejecutar el pipeline
 python src/main.py
+
+---
+## 📸 Pipeline Execution
+
+Al ejecutar el pipeline, cada etapa queda registrada mediante un sistema de logging para facilitar el monitoreo y la depuración.
+
+![Pipeline logs](assets/screenshots/pipeline-logs.png)
+
+*Ejemplo real de una ejecución exitosa del pipeline.*
+
+---
 
 
 # 📊 Resultado del ETL
