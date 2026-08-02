@@ -43,6 +43,12 @@ El pipeline genera automáticamente un archivo Excel listo para análisis.
 - **Logging:** Módulo `logging` de Python
 
 ---
+## 📋 Requirements
+
+- Python 3.14.2
+- Internet connection
+- The project includes a preconfigured `config.json` file, so no additional configuration is required.
+---
 
 ## 📂 Estructura del Proyecto
 ```text
