@@ -4,9 +4,9 @@ import pandas as pd
 
 def transformar_datos(data):
     df = pd.DataFrame(data['prices'], columns=["timestamp",'price'])
-    logging.info("Transformación JSON → DataFrame completada")
+    logging.info("JSON → DataFrame conversion completed")
     df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms")
-    logging.info("Conversión de timestamp a datetime completada")
+    logging.info("Timestamp-to-datetime conversion completed")
     return df
 
 
